@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		73FB4DFB2941CCBA006896AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4DFA2941CCBA006896AB /* AppDelegate.swift */; };
 		73FB4DFD2941CCBA006896AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4DFC2941CCBA006896AB /* SceneDelegate.swift */; };
-		73FB4DFF2941CCBA006896AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4DFE2941CCBA006896AB /* ViewController.swift */; };
 		73FB4E022941CCBA006896AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FB4E002941CCBA006896AB /* Main.storyboard */; };
 		73FB4E042941CCBB006896AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FB4E032941CCBB006896AB /* Assets.xcassets */; };
 		73FB4E072941CCBB006896AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FB4E052941CCBB006896AB /* LaunchScreen.storyboard */; };
 		73FB4E122941CCBB006896AB /* NotiExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E112941CCBB006896AB /* NotiExampleTests.swift */; };
 		73FB4E1C2941CCBB006896AB /* NotiExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E1B2941CCBB006896AB /* NotiExampleUITests.swift */; };
 		73FB4E1E2941CCBB006896AB /* NotiExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E1D2941CCBB006896AB /* NotiExampleUITestsLaunchTests.swift */; };
+		73FB4E2B2941CFB4006896AB /* NotiExampleDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E2A2941CFB4006896AB /* NotiExampleDependencyContainer.swift */; };
+		73FB4E2F2941D11B006896AB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E2D2941D11B006896AB /* FirstViewController.swift */; };
+		73FB4E302941D11B006896AB /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73FB4E2E2941D11B006896AB /* FirstViewController.xib */; };
+		73FB4E332941D343006896AB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E312941D342006896AB /* SecondViewController.swift */; };
+		73FB4E342941D343006896AB /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73FB4E322941D342006896AB /* SecondViewController.xib */; };
+		73FB4E362941D620006896AB /* FirstViewDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E352941D620006896AB /* FirstViewDependencyContainer.swift */; };
+		73FB4E382941D879006896AB /* SecondViewDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E372941D879006896AB /* SecondViewDependencyContainer.swift */; };
+		73FB4E3B2941D97D006896AB /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4E3A2941D97D006896AB /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,6 @@
 		73FB4DF72941CCBA006896AB /* NotiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FB4DFA2941CCBA006896AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FB4DFC2941CCBA006896AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73FB4DFE2941CCBA006896AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73FB4E012941CCBA006896AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73FB4E032941CCBB006896AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73FB4E062941CCBB006896AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		73FB4E172941CCBB006896AB /* NotiExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotiExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FB4E1B2941CCBB006896AB /* NotiExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiExampleUITests.swift; sourceTree = "<group>"; };
 		73FB4E1D2941CCBB006896AB /* NotiExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		73FB4E2A2941CFB4006896AB /* NotiExampleDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiExampleDependencyContainer.swift; sourceTree = "<group>"; };
+		73FB4E2D2941D11B006896AB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		73FB4E2E2941D11B006896AB /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		73FB4E312941D342006896AB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		73FB4E322941D342006896AB /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		73FB4E352941D620006896AB /* FirstViewDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewDependencyContainer.swift; sourceTree = "<group>"; };
+		73FB4E372941D879006896AB /* SecondViewDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewDependencyContainer.swift; sourceTree = "<group>"; };
+		73FB4E3A2941D97D006896AB /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +113,15 @@
 		73FB4DF92941CCBA006896AB /* NotiExample */ = {
 			isa = PBXGroup;
 			children = (
+				73FB4E392941D96C006896AB /* Extension */,
+				73FB4E2C2941D106006896AB /* ViewController */,
 				73FB4DFA2941CCBA006896AB /* AppDelegate.swift */,
 				73FB4DFC2941CCBA006896AB /* SceneDelegate.swift */,
-				73FB4DFE2941CCBA006896AB /* ViewController.swift */,
 				73FB4E002941CCBA006896AB /* Main.storyboard */,
 				73FB4E032941CCBB006896AB /* Assets.xcassets */,
 				73FB4E052941CCBB006896AB /* LaunchScreen.storyboard */,
 				73FB4E082941CCBB006896AB /* Info.plist */,
+				73FB4E2A2941CFB4006896AB /* NotiExampleDependencyContainer.swift */,
 			);
 			path = NotiExample;
 			sourceTree = "<group>";
@@ -125,6 +141,27 @@
 				73FB4E1D2941CCBB006896AB /* NotiExampleUITestsLaunchTests.swift */,
 			);
 			path = NotiExampleUITests;
+			sourceTree = "<group>";
+		};
+		73FB4E2C2941D106006896AB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				73FB4E2D2941D11B006896AB /* FirstViewController.swift */,
+				73FB4E2E2941D11B006896AB /* FirstViewController.xib */,
+				73FB4E312941D342006896AB /* SecondViewController.swift */,
+				73FB4E322941D342006896AB /* SecondViewController.xib */,
+				73FB4E352941D620006896AB /* FirstViewDependencyContainer.swift */,
+				73FB4E372941D879006896AB /* SecondViewDependencyContainer.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		73FB4E392941D96C006896AB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				73FB4E3A2941D97D006896AB /* ViewControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +271,8 @@
 				73FB4E072941CCBB006896AB /* LaunchScreen.storyboard in Resources */,
 				73FB4E042941CCBB006896AB /* Assets.xcassets in Resources */,
 				73FB4E022941CCBA006896AB /* Main.storyboard in Resources */,
+				73FB4E302941D11B006896AB /* FirstViewController.xib in Resources */,
+				73FB4E342941D343006896AB /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73FB4DFF2941CCBA006896AB /* ViewController.swift in Sources */,
 				73FB4DFB2941CCBA006896AB /* AppDelegate.swift in Sources */,
 				73FB4DFD2941CCBA006896AB /* SceneDelegate.swift in Sources */,
+				73FB4E2B2941CFB4006896AB /* NotiExampleDependencyContainer.swift in Sources */,
+				73FB4E382941D879006896AB /* SecondViewDependencyContainer.swift in Sources */,
+				73FB4E3B2941D97D006896AB /* ViewControllerExtension.swift in Sources */,
+				73FB4E332941D343006896AB /* SecondViewController.swift in Sources */,
+				73FB4E362941D620006896AB /* FirstViewDependencyContainer.swift in Sources */,
+				73FB4E2F2941D11B006896AB /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -442,7 +486,6 @@
 				INFOPLIST_FILE = NotiExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +513,6 @@
 				INFOPLIST_FILE = NotiExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
