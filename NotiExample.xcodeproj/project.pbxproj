@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73CA808F294821AA00860E1D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA808E294821AA00860E1D /* UserManager.swift */; };
+		73CA8091294821B200860E1D /* RealmDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA8090294821B200860E1D /* RealmDBManager.swift */; };
+		73CA8096294821D000860E1D /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CA8095294821D000860E1D /* UseCase.swift */; };
 		73FB4DFB2941CCBA006896AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4DFA2941CCBA006896AB /* AppDelegate.swift */; };
 		73FB4DFD2941CCBA006896AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB4DFC2941CCBA006896AB /* SceneDelegate.swift */; };
 		73FB4E022941CCBA006896AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FB4E002941CCBA006896AB /* Main.storyboard */; };
@@ -43,6 +46,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73CA808E294821AA00860E1D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		73CA8090294821B200860E1D /* RealmDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBManager.swift; sourceTree = "<group>"; };
+		73CA8095294821D000860E1D /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		73CA809F2948233800860E1D /* SFUIText-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-RegularItalic.ttf"; sourceTree = "<group>"; };
+		73CA80A02948233800860E1D /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Semibold.ttf"; sourceTree = "<group>"; };
+		73CA80A12948233800860E1D /* SFUIText-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		73CA80A22948233800860E1D /* SFUIText-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		73CA80A32948233800860E1D /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
+		73CA80A42948233800860E1D /* SFUIText-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Heavy.ttf"; sourceTree = "<group>"; };
+		73CA80A52948233800860E1D /* SFUIText-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-BoldItalic.ttf"; sourceTree = "<group>"; };
+		73CA80A62948233800860E1D /* SFUIText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.ttf"; sourceTree = "<group>"; };
+		73CA80A72948233800860E1D /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
+		73CA80A82948233800860E1D /* SFUIText-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-MediumItalic.ttf"; sourceTree = "<group>"; };
+		73CA80A92948233800860E1D /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		73CA80AA2948233800860E1D /* SFUIText-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-LightItalic.ttf"; sourceTree = "<group>"; };
+		73CA80AD2948311D00860E1D /* noti_sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = noti_sound.caf; sourceTree = SOURCE_ROOT; };
+		73CA80AE2948315500860E1D /* NotiExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotiExample.entitlements; sourceTree = "<group>"; };
 		73FB4DF72941CCBA006896AB /* NotiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FB4DFA2941CCBA006896AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FB4DFC2941CCBA006896AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +110,113 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73CA808D294821A100860E1D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				73CA808E294821AA00860E1D /* UserManager.swift */,
+				73CA8090294821B200860E1D /* RealmDBManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		73CA8092294821B800860E1D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		73CA8093294821BD00860E1D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				73CA809A2948224B00860E1D /* RepositoryImpl */,
+				73CA80972948221800860E1D /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		73CA8094294821C200860E1D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				73CA80992948222700860E1D /* Repository */,
+				73CA80982948221F00860E1D /* Model */,
+				73CA8095294821D000860E1D /* UseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		73CA80972948221800860E1D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		73CA80982948221F00860E1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73CA80992948222700860E1D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		73CA809A2948224B00860E1D /* RepositoryImpl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepositoryImpl;
+			sourceTree = "<group>";
+		};
+		73CA809B2948225F00860E1D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				73CA809E2948227B00860E1D /* Fonts */,
+				73CA809C2948226C00860E1D /* Lib */,
+				73FB4E032941CCBB006896AB /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		73CA809C2948226C00860E1D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				73CA809D2948227000860E1D /* Toast */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		73CA809D2948227000860E1D /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		73CA809E2948227B00860E1D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				73CA80A32948233800860E1D /* SFUIText-Bold.ttf */,
+				73CA80A52948233800860E1D /* SFUIText-BoldItalic.ttf */,
+				73CA80A42948233800860E1D /* SFUIText-Heavy.ttf */,
+				73CA80A12948233800860E1D /* SFUIText-HeavyItalic.ttf */,
+				73CA80A62948233800860E1D /* SFUIText-Light.ttf */,
+				73CA80AA2948233800860E1D /* SFUIText-LightItalic.ttf */,
+				73CA80A72948233800860E1D /* SFUIText-Medium.ttf */,
+				73CA80A82948233800860E1D /* SFUIText-MediumItalic.ttf */,
+				73CA80A92948233800860E1D /* SFUIText-Regular.ttf */,
+				73CA809F2948233800860E1D /* SFUIText-RegularItalic.ttf */,
+				73CA80A02948233800860E1D /* SFUIText-Semibold.ttf */,
+				73CA80A22948233800860E1D /* SFUIText-SemiboldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		73FB4DEE2941CCBA006896AB = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +240,18 @@
 		73FB4DF92941CCBA006896AB /* NotiExample */ = {
 			isa = PBXGroup;
 			children = (
+				73CA80AE2948315500860E1D /* NotiExample.entitlements */,
+				73CA80AD2948311D00860E1D /* noti_sound.caf */,
+				73CA809B2948225F00860E1D /* Resource */,
+				73CA8094294821C200860E1D /* Domain */,
+				73CA8093294821BD00860E1D /* Data */,
+				73CA8092294821B800860E1D /* Utils */,
+				73CA808D294821A100860E1D /* Manager */,
 				73FB4E392941D96C006896AB /* Extension */,
 				73FB4E2C2941D106006896AB /* ViewController */,
 				73FB4DFA2941CCBA006896AB /* AppDelegate.swift */,
 				73FB4DFC2941CCBA006896AB /* SceneDelegate.swift */,
 				73FB4E002941CCBA006896AB /* Main.storyboard */,
-				73FB4E032941CCBB006896AB /* Assets.xcassets */,
 				73FB4E052941CCBB006896AB /* LaunchScreen.storyboard */,
 				73FB4E082941CCBB006896AB /* Info.plist */,
 				73FB4E2A2941CFB4006896AB /* NotiExampleDependencyContainer.swift */,
@@ -297,9 +430,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CA808F294821AA00860E1D /* UserManager.swift in Sources */,
+				73CA8091294821B200860E1D /* RealmDBManager.swift in Sources */,
 				73FB4DFB2941CCBA006896AB /* AppDelegate.swift in Sources */,
 				73FB4DFD2941CCBA006896AB /* SceneDelegate.swift in Sources */,
 				73FB4E2B2941CFB4006896AB /* NotiExampleDependencyContainer.swift in Sources */,
+				73CA8096294821D000860E1D /* UseCase.swift in Sources */,
 				73FB4E382941D879006896AB /* SecondViewDependencyContainer.swift in Sources */,
 				73FB4E3B2941D97D006896AB /* ViewControllerExtension.swift in Sources */,
 				73FB4E332941D343006896AB /* SecondViewController.swift in Sources */,
@@ -479,6 +615,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotiExample/NotiExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2D99AJ5KUG;
@@ -506,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NotiExample/NotiExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2D99AJ5KUG;
