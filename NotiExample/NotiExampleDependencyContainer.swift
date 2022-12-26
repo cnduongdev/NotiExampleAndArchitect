@@ -28,4 +28,14 @@ class NotiExampleDependencyContainer {
         navigationController.navigationBar.isHidden = true
         return navigationController
     }
+    
+    func makeAppDelegate() -> AppDelegate? {
+        
+        guard let delegate = UIApplication.shared.delegate as? AppDelegate else { return nil}
+        return delegate
+    }
+    
+    func makeKeyWindow()  {
+        guard let keyWindow = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first else { return }
+    }
 }

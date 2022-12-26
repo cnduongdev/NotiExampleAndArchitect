@@ -3,6 +3,7 @@
     "alert": {
       "title": "Your food is done.",
       "body": "Be careful, it's really hot!"
-    }
+    },
+    "sound": "noti_sound.caf"
   }
 }”
