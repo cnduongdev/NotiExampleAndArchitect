@@ -6,6 +6,11 @@
 //
 
 import UIKit
+import FirebaseMessaging
+import FirebaseCrashlytics
+import Firebase
+import UserNotifications
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
+        configureFirebase()
+        registerNotification(application)
         return true
     }
 
@@ -34,6 +40,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+}
+
+extension AppDelegate {
+    
+    private func configureFirebase() {
+        FirebaseApp.configure()
+        Messaging.messaging().delegate = self
+    }
+}
+
+extension AppDelegate {
+    
+    private func registerNotification(_ application: UIApplication) {
+        UNUserNotificationCenter.current().delegate = self
+
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, _ in
+            guard granted else { return }
+            DispatchQueue.main.async {
+                application.registerForRemoteNotifications()
+            }
+        }
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        Messaging.messaging().apnsToken = deviceToken
+        print("token: \(token)")
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Fail to receveied device token")
+    }
+    
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+    }
+}
+
+extension AppDelegate: MessagingDelegate {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        print("Firebase registration token: \(String(describing: fcmToken))")
+        let dataDict: [String: String] = ["token": fcmToken ?? ""]
+         NotificationCenter.default.post(
+           name: Notification.Name("FCMToken"),
+           object: nil,
+           userInfo: dataDict
+         )
     }
 }
 
