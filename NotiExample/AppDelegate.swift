@@ -80,6 +80,33 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
+        let userinfo = response.notification.request.content.userInfo
+        let notiName = userinfo["NOTI_NAME"] as! String
+        
+        print("NotiName", notiName)
+        
+        let category = response.notification.request.content.categoryIdentifier
+        if category == "MEETING_CATEGORY" {
+            switch response.actionIdentifier {
+            case "ACCEPT_ACTION":
+                print("ACCEPT_ACTION")
+                break
+            case "DECLINE_ACTION":
+                print("DECLINE_ACTION")
+                break
+            default:
+                break
+            }
+        }
+        completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        let category = notification.request.content.categoryIdentifier
+        if category == "MEETING_CATEGORY" {
+            //handle
+        }
+        completionHandler(.alert)
     }
 }
 
